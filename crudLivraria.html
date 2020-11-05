@@ -1,0 +1,435 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+	<style>
+        table 
+        {
+            width: 100%;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+      
+        input[type='button'] 
+        {
+            cursor: pointer;
+            border: none;
+            color: #FFF;
+        }
+        
+        input[type='text'], select 
+        {
+            text-align: center;
+            border: solid 1px #CCC;
+            width: auto;
+            padding: 2px 3px;
+        }
+    </style>
+    <title>Livraria Pitágoras</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            <strong>Livraria</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Cadastro de Livros</h1>
+          <p class="lead text-muted">Escreva o nome, a categoria entre as disponíveis e o preço separado por ponto.</p>
+          <p>
+            <div id="container" style="width:700px;"></div>
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="https://uploads.metropoles.com/wp-content/uploads/2020/01/08171741/livros1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">A maior variedade de livros nacionais e importados para você! Romances, Mais Vendidos, Box, Didáticos e muito mais com preços incríveis na Saraiva.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted"></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="https://i.zst.com.br/images/livros-na-black-friday-2019-confira-nossas-apostas-photo946164244-44-1a-2f.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Compre livros online com ótimos preços e dos mais variados gêneros para você ler : Romance, HQs, Autodesenvolvimento, Infantil. Frete GRÁTIS com Prime</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="https://www.cartacapital.com.br/wp-content/uploads/2019/06/livros_pnld-e1567798115745.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">O Maior Acervo de Livros, Filmes, Games, DVDs e eBooks pelos menores preços, em até 10x sem Juros. Acesse e confira!</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Editar</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+                  </div>
+                </div>
+              </div>
+              </div>
+            
+         
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Voltar ao topo</a>
+        </p>
+        <p>Livraria Pitágoras</p>
+        <p>A maior livraria de todas</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+	<script>
+    var crudApp = new function () {
+
+        // An array of JSON objects with values.
+        this.myBooks = [
+            { ID: '1', Nome: 'Arquitetura de Computadores', Categoria: 'Hardware', Preço: 125.60 },
+            { ID: '2', Nome: 'Asp.Net 4 Livro Azul', Categoria: 'Programação', Preço: 56.00 },
+            { ID: '3', Nome: 'Ciência popular', Categoria: 'Ciência', Preço: 210.40 }
+        ]
+
+        this.category = ['Negócios', 'Hardware', 'Programação', 'Ciência'];
+        this.col = [];
+
+        this.createTable = function () {
+
+            // Extract value for table header.
+            for (var i = 0; i < this.myBooks.length; i++) {
+                for (var key in this.myBooks[i]) {
+                    if (this.col.indexOf(key) === -1) {
+                        this.col.push(key);
+                    }
+                }
+            }
+
+            // CREATE A TABLE.
+            var table = document.createElement('table');
+            table.setAttribute('id', 'booksTable');     // Seet table id.
+
+            var tr = table.insertRow(-1);               // Create a row (for header).
+
+            for (var h = 0; h < this.col.length; h++) {
+                // Add table header.
+                var th = document.createElement('th');
+                th.innerHTML = this.col[h].replace('_', ' ');
+                tr.appendChild(th);
+            }
+
+            // Add rows using JSON data.
+            for (var i = 0; i < this.myBooks.length; i++) {
+
+                tr = table.insertRow(-1);           // Create a new row.
+
+                for (var j = 0; j < this.col.length; j++) {
+                    var tabCell = tr.insertCell(-1);
+                    tabCell.innerHTML = this.myBooks[i][this.col[j]];
+                }
+
+                // Dynamically create and add elements to table cells with events.
+
+                this.td = document.createElement('td');
+
+                // *** CANCEL OPTION.
+                tr.appendChild(this.td);
+                var lblCancel = document.createElement('label');
+                lblCancel.innerHTML = '✖';
+                lblCancel.setAttribute('onclick', 'crudApp.Cancel(this)');
+                lblCancel.setAttribute('style', 'display:none;');
+                lblCancel.setAttribute('title', 'Cancel');
+                lblCancel.setAttribute('id', 'lbl' + i);
+                this.td.appendChild(lblCancel);
+
+                // *** SAVE.
+                tr.appendChild(this.td);
+                var btSave = document.createElement('input');
+
+                btSave.setAttribute('type', 'button');      // SET ATTRIBUTES.
+                btSave.setAttribute('value', 'Salvar');
+                btSave.setAttribute('id', 'Save' + i);
+                btSave.setAttribute('style', 'display:none;');
+                btSave.setAttribute('onclick', 'crudApp.Save(this)');       // ADD THE BUTTON's 'onclick' EVENT.
+                this.td.appendChild(btSave);
+
+                // *** UPDATE.
+                tr.appendChild(this.td);
+                var btUpdate = document.createElement('input');
+
+                btUpdate.setAttribute('type', 'button');    // SET ATTRIBUTES.
+                btUpdate.setAttribute('value', 'Atualizar');
+                btUpdate.setAttribute('id', 'Edit' + i);
+                btUpdate.setAttribute('style', 'background-color:#44CCEB;');
+                btUpdate.setAttribute('onclick', 'crudApp.Update(this)');   // ADD THE BUTTON's 'onclick' EVENT.
+                this.td.appendChild(btUpdate);
+
+                // *** DELETE.
+                this.td = document.createElement('th');
+                tr.appendChild(this.td);
+                var btDelete = document.createElement('input');
+                btDelete.setAttribute('type', 'button');    // SET INPUT ATTRIBUTE.
+                btDelete.setAttribute('value', 'Deletar');
+                btDelete.setAttribute('style', 'background-color:#ED5650;');
+                btDelete.setAttribute('onclick', 'crudApp.Delete(this)');   // ADD THE BUTTON's 'onclick' EVENT.
+                this.td.appendChild(btDelete);
+            }
+
+
+            // ADD A ROW AT THE END WITH BLANK TEXTBOXES AND A DROPDOWN LIST (FOR NEW ENTRY).
+
+            tr = table.insertRow(-1);           // CREATE THE LAST ROW.
+
+            for (var j = 0; j < this.col.length; j++) {
+                var newCell = tr.insertCell(-1);
+                if (j >= 1) {
+
+                    if (j == 2) {   // WE'LL ADD A DROPDOWN LIST AT THE SECOND COLUMN (FOR Category).
+
+                        var select = document.createElement('select');      // CREATE AND ADD A DROPDOWN LIST.
+                        select.innerHTML = '<option value=""></option>';
+                        for (k = 0; k < this.category.length; k++) {
+                            select.innerHTML = select.innerHTML +
+                                '<option value="' + this.category[k] + '">' + this.category[k] + '</option>';
+                        }
+                        newCell.appendChild(select);
+                    }
+                    else {
+                        var tBox = document.createElement('input');          // CREATE AND ADD A TEXTBOX.
+                        tBox.setAttribute('type', 'text');
+                        tBox.setAttribute('value', '');
+                        newCell.appendChild(tBox);
+                    }
+                }
+            }
+
+            this.td = document.createElement('td');
+            tr.appendChild(this.td);
+
+            var btNew = document.createElement('input');
+
+            btNew.setAttribute('type', 'button');       // SET ATTRIBUTES.
+            btNew.setAttribute('value', 'Criar');
+            btNew.setAttribute('id', 'New' + i);
+            btNew.setAttribute('style', 'background-color:#207DD1;');
+            btNew.setAttribute('onclick', 'crudApp.CreateNew(this)');       // ADD THE BUTTON's 'onclick' EVENT.
+            this.td.appendChild(btNew);
+
+            var div = document.getElementById('container');
+            div.innerHTML = '';
+            div.appendChild(table);    // ADD THE TABLE TO THE WEB PAGE.
+        };
+
+        // ****** OPERATIONS START.
+
+        // CANCEL.
+        this.Cancel = function (oButton) {
+
+            // HIDE THIS BUTTON.
+            oButton.setAttribute('style', 'display:none; float:none;');
+
+            var activeRow = oButton.parentNode.parentNode.rowIndex;
+
+            // HIDE THE SAVE BUTTON.
+            var btSave = document.getElementById('Save' + (activeRow - 1));
+            btSave.setAttribute('style', 'display:none;');
+
+            // SHOW THE UPDATE BUTTON AGAIN.
+            var btUpdate = document.getElementById('Edit' + (activeRow - 1));
+            btUpdate.setAttribute('style', 'display:block; margin:0 auto; background-color:#44CCEB;');
+
+            var tab = document.getElementById('booksTable').rows[activeRow];
+
+            for (i = 0; i < this.col.length; i++) {
+                var td = tab.getElementsByTagName("td")[i];
+                td.innerHTML = this.myBooks[(activeRow - 1)][this.col[i]];
+            }
+        }
+
+
+        // EDIT DATA.
+        this.Update = function (oButton) {
+            var activeRow = oButton.parentNode.parentNode.rowIndex;
+            var tab = document.getElementById('booksTable').rows[activeRow];
+
+            // SHOW A DROPDOWN LIST WITH A LIST OF CATEGORIES.
+            for (i = 1; i < 4; i++) {
+                if (i == 2) {
+                    var td = tab.getElementsByTagName("td")[i];
+                    var ele = document.createElement('select');      // DROPDOWN LIST.
+                    ele.innerHTML = '<option value="' + td.innerText + '">' + td.innerText + '</option>';
+                    for (k = 0; k < this.category.length; k++) {
+                        ele.innerHTML = ele.innerHTML +
+                            '<option value="' + this.category[k] + '">' + this.category[k] + '</option>';
+                    }
+                    td.innerText = '';
+                    td.appendChild(ele);
+                }
+                else {
+                    var td = tab.getElementsByTagName("td")[i];
+                    var ele = document.createElement('input');      // TEXTBOX.
+                    ele.setAttribute('type', 'text');
+                    ele.setAttribute('value', td.innerText);
+                    td.innerText = '';
+                    td.appendChild(ele);
+                }
+            }
+
+            var lblCancel = document.getElementById('lbl' + (activeRow - 1));
+            lblCancel.setAttribute('style', 'cursor:pointer; display:block; width:20px; float:left; position: absolute;');
+
+            var btSave = document.getElementById('Save' + (activeRow - 1));
+            btSave.setAttribute('style', 'display:block; margin-left:30px; float:left; background-color:#2DBF64;');
+
+            // HIDE THIS BUTTON.
+            oButton.setAttribute('style', 'display:none;');
+        };
+
+
+        // DELETE DATA.
+        this.Delete = function (oButton) {
+            var activeRow = oButton.parentNode.parentNode.rowIndex;
+            this.myBooks.splice((activeRow - 1), 1);    // DELETE THE ACTIVE ROW.
+            this.createTable();                         // REFRESH THE TABLE.
+        };
+
+        // SAVE DATA.
+        this.Save = function (oButton) {
+            var activeRow = oButton.parentNode.parentNode.rowIndex;
+            var tab = document.getElementById('booksTable').rows[activeRow];
+
+            // UPDATE myBooks ARRAY WITH VALUES.
+            for (i = 1; i < this.col.length; i++) {
+                var td = tab.getElementsByTagName("td")[i];
+                if (td.childNodes[0].getAttribute('type') == 'text' || td.childNodes[0].tagName == 'SELECT') {  // CHECK IF ELEMENT IS A TEXTBOX OR SELECT.
+                    this.myBooks[(activeRow - 1)][this.col[i]] = td.childNodes[0].value;      // SAVE THE VALUE.
+                }
+            }
+            this.createTable();     // REFRESH THE TABLE.
+        }
+
+        // CREATE NEW.
+        this.CreateNew = function (oButton) {
+            var activeRow = oButton.parentNode.parentNode.rowIndex;
+            var tab = document.getElementById('booksTable').rows[activeRow];
+            var obj = {};
+
+            // ADD NEW VALUE TO myBooks ARRAY.
+            for (i = 1; i < this.col.length; i++) {
+                var td = tab.getElementsByTagName("td")[i];
+                if (td.childNodes[0].getAttribute('type') == 'text' || td.childNodes[0].tagName == 'SELECT') {      // CHECK IF ELEMENT IS A TEXTBOX OR SELECT.
+                    var txtVal = td.childNodes[0].value;
+                    if (txtVal != '') {
+                        obj[this.col[i]] = txtVal.trim();
+                    }
+                    else {
+                        obj = '';
+                        alert('Preencha todos os campos corretamente');
+                        break;
+                    }
+                }
+            }
+            obj[this.col[0]] = this.myBooks.length + 1;     // NEW ID.
+
+            if (Object.keys(obj).length > 0) {      // CHECK IF OBJECT IS NOT EMPTY.
+                this.myBooks.push(obj);             // PUSH (ADD) DATA TO THE JSON ARRAY.
+                this.createTable();                 // REFRESH THE TABLE.
+            }
+        }
+
+        // ****** OPERATIONS END.
+    }
+
+    crudApp.createTable();
+</script>
+  </body>
+</html>
