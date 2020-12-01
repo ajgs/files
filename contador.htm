@@ -2,11 +2,11 @@
 <head>
 <title>Contagem Progressiva</title>
 <SCRIPT language=JavaScript>
-<!-- begin
+<!-- começo
 var sHors = "0"+0; 
 var sMins = "0"+0;
 var sSecs = -1;
-function getSecs(){
+	function getSecs(){
 	sSecs++;
 	if(sSecs==60){sSecs=0;sMins++;
     if(sMins<=9)sMins="0"+sMins;
@@ -15,33 +15,40 @@ function getSecs(){
     if(sHors<=9)sHors="0"+sHors;
 	}
 	if(sSecs<=9)sSecs="0"+sSecs;
-clock1.innerHTML=sHors+"<font color=#000000>:</font>"+sMins+"<font color=#000000>:</font>"+sSecs;
+	clock1.innerHTML=sHors+"<font color=#000000>:</font>"+sMins+"<font color=#000000>:</font>"+sSecs;
     setTimeout('getSecs()',1000);
-
 	}
+	
 	function aumentarCont(){
 	sSecs++;
 	}
+	
 	function diminuirCont(){
 	sSecs--;
 	}
+	
 	function diminuirMin(){
 	sMins--;
 	}
+	
 	function diminuirHoras(){
 	sHors--;
 	}
+	
 	function resetarCont(){
 	sSecs = 0;
 	sHors = 0;
 	sMins = 0;
 	}
+	
 	function aumentarMinCont(){
 	sMins++;
 	}
+	
 	function aumentarHorasCont(){
 	sHors++;
 	}
+	
 //-->
 </SCRIPT>
 
