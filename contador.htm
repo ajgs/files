@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Contagem Progressiva</title>
+<SCRIPT language=JavaScript>
+<!-- begin
+var sHors = "0"+0; 
+var sMins = "0"+0;
+var sSecs = -1;
+function getSecs(){
+	sSecs++;
+	if(sSecs==60){sSecs=0;sMins++;
+    if(sMins<=9)sMins="0"+sMins;
+    }
+	if(sMins==60){sMins="0"+0;sHors++;
+    if(sHors<=9)sHors="0"+sHors;
+	}
+	if(sSecs<=9)sSecs="0"+sSecs;
+clock1.innerHTML=sHors+"<font color=#000000>:</font>"+sMins+"<font color=#000000>:</font>"+sSecs;
+    setTimeout('getSecs()',1000);
+
+	}
+	function aumentarCont(){
+	sSecs++;
+	}
+	function diminuirCont(){
+	sSecs--;
+	}
+	function diminuirMin(){
+	sMins--;
+	}
+	function diminuirHoras(){
+	sHors--;
+	}
+	function resetarCont(){
+	sSecs = 0;
+	sHors = 0;
+	sMins = 0;
+	}
+	function aumentarMinCont(){
+	sMins++;
+	}
+	function aumentarHorasCont(){
+	sHors++;
+	}
+//-->
+</SCRIPT>
+
+</head>
+<!-- Aqui começa o corpo da página -->
+<body>
+
+<h2 align="center"> <font color="#065ca5" face="tahoma">Contagem progressiva com botões</font></h2>
+<hr color="#065ca5">
+<div align="center"> <FONT SIZE="2" COLOR="#065ca5" face="arial"> </font>&nbsp;<font color="#FF0000" size="2"> 
+    </font>&nbsp; &nbsp;Aguarde...<br><font color="#FF0000" size="3" face="Arial Black"><span id="clock1"></span><script>setTimeout('getSecs()',1000);</script></font><br>
+	
+	
+  
+<br>
+<br>
+	<button onclick="aumentarCont()" type="button"> Aumentar Contador SEGUNDO</button>
+	<button onclick="aumentarMinCont()" type="button"> Aumentar Contador MINUTO</button>
+	<button onclick="aumentarHorasCont()" type="button"> Aumentar Contador HORAS</button>
+<br>
+<br>
+	<button onclick="diminuirCont()" type="button"> Diminuir Contador SEGUNDO</button>
+	<button onclick="diminuirMin()" type="button"> Diminuir Contador MINUTO</button>
+	<button onclick="diminuirHoras()" type="button"> Diminuir Contador HORAS</button>
+<br>
+<br>
+<br>
+	<button onclick="resetarCont()" type="button"> Resetar Contador </button>
+ </FONT></div>
+  
+</body>
+</html>
